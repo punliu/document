@@ -1,0 +1,28 @@
+1.  download git scm 
+  1.1 install git scm 
+  1.2 config git scm 
+  $ git config --global user.name "username"
+  $ git config --global user.email "username@gmail.cn"
+  1.3 generate ssh key 
+  >> start >> git bash 
+  $ ssh-keygen -t rsa -C "username@gmail.cn"
+  open .ssh/id_rsa.pub 
+  copy the content to github new ssh key 
+  $ ssh git@github.com
+  
+2.  download tortoise git  
+	2.1 Settings->Generanl 
+       click check now for check git scm is installed 
+	2.2 Settings->Git 
+	   config username and email 
+	2.3 PuTTYgen generate ssh key 
+	   select RSA to generate key and save private key to a fold 
+	2.4 Add Public key to Github 
+	   when you login Github, Copy PuTTYgen public key to new ssh key 
+	2.5 Create a repository on Github 
+	   On Github, Create a new repository 
+	2.6 Git Clone To your PC computer
+	   please pay attention to add putty Key (The public key in your saved file).
+	2.7 Git commit to master 
+	   add your special file and then git commit to master 
+	   push code to remote
